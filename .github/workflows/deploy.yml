@@ -2,7 +2,8 @@ name: Deploy
 
 on:
   push:
-    branches: [main]
+    # branches: ['*']
+    branches: ['*', '!main']
 
 # Don't deploy two commits in parallel
 concurrency:
